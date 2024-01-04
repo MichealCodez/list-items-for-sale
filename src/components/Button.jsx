@@ -4,6 +4,7 @@ const Button = ({
   backgroundColor,
   borderColor,
   textColor,
+  fullWidth,
 }) => {
   return (
     <button
@@ -11,7 +12,7 @@ const Button = ({
         backgroundColor
           ? `${backgroundColor} ${borderColor} ${textColor}`
           : "border-coral-red text-white bg-coral-red"
-      } hover:scale-[1.1]`}
+      } hover:scale-[1.1] ${fullWidth && "w-full"}`}
     >
       {label}
       {iconLink && (

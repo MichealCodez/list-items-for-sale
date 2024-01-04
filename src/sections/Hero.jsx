@@ -18,7 +18,7 @@ const Hero = () => {
             The new arrival
           </span>
           <br />
-          <span className="whitespace-nowrap">
+          <span className="max-sm:whitespace-normal whitespace-nowrap">
             <span className="text-coral-red inline-block mt-3">Nike</span> Shoes
           </span>
         </h1>
@@ -27,7 +27,7 @@ const Hero = () => {
           you active life.
         </p>
         <Button label="Shop Now" iconLink={arrowRight} />
-        <div className="flex justify-start items-start sm:flex-wrap w-full mt-20 gap-16">
+        <div className="flex justify-start items-start max-sm:flex-wrap w-full mt-20 gap-16">
           {statistics.map((value) => (
             <div key={value.label}>
               <p className="text-4xl font-palanquin font-bold">{value.value}</p>
